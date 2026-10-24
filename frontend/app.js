@@ -178,13 +178,50 @@ function calculateDerivedMetrics() {
   };
 }
 
-// Sidebar Navigation Switcher
+// Master Navigation Handler (Entry vs Solution Sections)
+window.navigateToSection = function(target) {
+  if (target === 'entry') {
+    document.querySelectorAll('.nav-item-link').forEach(link => {
+      link.classList.toggle('active', link.dataset.nav === 'entry');
+    });
+    const entryEl = document.getElementById('entry-hero-view');
+    if (entryEl) {
+      entryEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    state.activeSidebarTab = target;
+    document.querySelectorAll('.nav-item-link').forEach(link => {
+      link.classList.toggle('active', link.dataset.nav === target);
+    });
+    document.querySelectorAll('.sol-tab-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === target);
+    });
+    renderCurrentView();
+    const solutionEl = document.getElementById('solution-workspace-section');
+    if (solutionEl) {
+      solutionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+};
+
+// Solution Sub-Tab Navigation Switcher
 window.switchNavTab = function(tabName) {
   state.activeSidebarTab = tabName;
-  document.querySelectorAll('.menu-item-link').forEach(link => {
-    link.classList.toggle('active', link.dataset.tab === tabName);
+  document.querySelectorAll('.nav-item-link').forEach(link => {
+    link.classList.toggle('active', link.dataset.nav === tabName);
+  });
+  document.querySelectorAll('.sol-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabName);
   });
   renderCurrentView();
+  const solutionEl = document.getElementById('solution-workspace-section');
+  if (solutionEl) {
+    solutionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
+window.openArchitectureModal = function() {
+  window.navigateToSection('reports');
 };
 
 // Render Main Canvas based on active sidebar tab
@@ -216,11 +253,12 @@ function renderDashboardView(container) {
   const derived = calculateDerivedMetrics();
   const unresolvedAlertCount = state.raw.anomalies_and_attributions.length - state.resolvedAlerts.size;
 
-  // Update notification badge count in top bar and sidebar
   const notifBadge = document.getElementById('notif-badge-count');
   if (notifBadge) notifBadge.innerText = unresolvedAlertCount;
   const sideBadge = document.getElementById('sidebar-alert-badge');
   if (sideBadge) sideBadge.innerText = unresolvedAlertCount;
+  const solBadge = document.getElementById('sol-tab-badge');
+  if (solBadge) solBadge.innerText = unresolvedAlertCount;
 
   // SVG Sparkline Strings
   const greenSparkline = `
@@ -1030,6 +1068,11 @@ window.toggleAlertResolution = function(id) {
   } else {
     state.resolvedAlerts.add(id);
   }
+  const unresolvedAlertCount = Math.max(0, (state.raw?.anomalies_and_attributions?.length || 5) - state.resolvedAlerts.size);
+  const notifBadge = document.getElementById('notif-badge-count');
+  if (notifBadge) notifBadge.innerText = unresolvedAlertCount;
+  const solBadge = document.getElementById('sol-tab-badge');
+  if (solBadge) solBadge.innerText = unresolvedAlertCount;
   renderCurrentView();
 };
 

@@ -3,122 +3,305 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PCRG — Predictive Circular-Resource Grid</title>
-  <link rel="stylesheet" href="styles.css?v=20261024_05">
+  <title>PCRG — Predictive Circular-Resource Grid (P2P 2026)</title>
+  <link rel="stylesheet" href="styles.css?v=20261024_06">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="data.js?v=20261024_05"></script>
+  <script src="data.js?v=20261024_06"></script>
 </head>
 <body>
-  <div class="pcrg-shell">
+  <div class="arch-shell">
     
-    <!-- Top Dark Header Bar -->
-    <header class="pcrg-header">
-      <div class="header-brand">
-        <div class="brand-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-          </svg>
-        </div>
-        <div class="brand-title-wrap">
-          <span class="brand-pcrg">PCRG</span>
-          <span class="brand-full">Predictive Circular-Resource Grid (P2P 2026)</span>
-        </div>
-      </div>
-
-      <div class="header-right-meta">
-        <div class="weather-widget" id="header-weather-widget" title="Live Campus Meteorological Telemetry">
-          <span id="weather-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          </span>
-          <div>
-            <span class="temp tnum" id="weather-temp-val">28.4°C</span>
-            <span class="weather-sub-text" id="weather-cond-val">68% RH &bull; 785 W/m²</span>
+    <!-- Top Architectural Navigation Bar (Matching Architeq Header) -->
+    <header class="arch-navbar">
+      <div class="arch-nav-container">
+        <!-- Logo on Left -->
+        <div class="arch-brand" onclick="navigateToSection('entry')">
+          <div class="arch-logo-icon">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="14" height="14" rx="2"/>
+              <path d="M11 11h14v14H11z"/>
+              <path d="M3 11h8M17 11v8"/>
+            </svg>
           </div>
+          <span class="arch-brand-title">ARCHITEQ <span class="arch-brand-sub">// PCRG</span></span>
         </div>
 
-        <div class="time-widget" id="header-datetime-readout">
-          <span class="live-clock-pulse"></span>
-          <span id="live-datetime-text">Initializing clock...</span>
-        </div>
+        <!-- Center Navigation Links -->
+        <nav class="arch-nav-links">
+          <a class="nav-item-link active" data-nav="entry" onclick="navigateToSection('entry')">Home</a>
+          <a class="nav-item-link" data-nav="dashboard" onclick="navigateToSection('dashboard')">Dashboard</a>
+          <a class="nav-item-link" data-nav="buildings" onclick="navigateToSection('buildings')">Buildings</a>
+          <a class="nav-item-link" data-nav="forecasts" onclick="navigateToSection('forecasts')">Forecasts</a>
+          <a class="nav-item-link" data-nav="resources" onclick="navigateToSection('resources')">Edge AI Waste</a>
+          <a class="nav-item-link" data-nav="reports" onclick="navigateToSection('reports')">Hardware BOM</a>
+          <a class="nav-item-link" data-nav="alerts" onclick="navigateToSection('alerts')">Alerts</a>
+        </nav>
 
-        <button class="notif-bell-btn" title="Alert Notifications" onclick="switchNavTab('alerts')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-          <span class="notif-badge-pill" id="notif-badge-count">3</span>
-        </button>
+        <!-- Right Header Elements: Weather, Clock & Primary CTA -->
+        <div class="arch-nav-right">
+          <!-- Weather Telemetry Pill -->
+          <div class="arch-weather-pill" id="header-weather-widget" title="Live Campus Meteorological Telemetry">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+            <span class="tnum arch-weather-temp" id="weather-temp-val">28.4°C</span>
+            <span class="arch-weather-sep">&bull;</span>
+            <span class="arch-weather-cond" id="weather-cond-val">68% RH</span>
+          </div>
 
-        <button class="theme-toggle-btn" title="Toggle Sidebar Contrast (Light / Dark)" onclick="toggleSidebarTheme()">
-          <span>◐ Sidebar</span>
-        </button>
+          <!-- Live Ticking Clock -->
+          <div class="arch-clock-pill" id="header-datetime-readout">
+            <span class="arch-pulse-dot"></span>
+            <span id="live-datetime-text" class="tnum">12:00:00 PM</span>
+          </div>
 
-        <div class="user-profile-badge">
-          <div class="avatar-circle">A</div>
-          <span class="user-name-text">Admin</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          <!-- Alert Notification Bell -->
+          <button class="arch-bell-btn" title="Alert Notifications" onclick="navigateToSection('alerts')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="arch-bell-badge" id="notif-badge-count">3</span>
+          </button>
+
+          <!-- Primary Dark CTA Button (Matching Let's Talk ->) -->
+          <button class="arch-cta-btn" onclick="navigateToSection('dashboard')">
+            <span>Explore Solution Grid &rarr;</span>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- Body Layout: Sidebar + Main Content -->
-    <div class="pcrg-body-container">
+    <!-- SECTION 1: THE ENTRY HERO (Exact Match to Architeq Architectural Presentation) -->
+    <section class="arch-entry-hero" id="entry-hero-view">
+      <!-- Blueprint drafting paper grid background -->
+      <div class="blueprint-grid-overlay"></div>
+
+      <div class="arch-hero-container">
+        
+        <!-- Left Column: Typography, Tagline, CTAs & Floating Stats -->
+        <div class="arch-hero-left">
+          
+          <!-- Designing the Future Sub-badge -->
+          <div class="arch-tag-badge">
+            <span class="green-indicator-dot"></span>
+            <span>Designing the Future &bull; P2P 2026 Campus Grid</span>
+          </div>
+
+          <!-- Main Architectural Headline -->
+          <h1 class="arch-hero-title">
+            Where Vision<br>
+            Meets <span class="green-text-accent">Precision</span>
+          </h1>
+
+          <!-- Subtitle Paragraph -->
+          <p class="arch-hero-desc">
+            We turn campus resource telemetry into an autonomous predictive circular grid through 
+            sub-millisecond edge AI, 12-hour ahead load forecasting, and closed-loop waste diversion.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="arch-hero-buttons">
+            <button class="arch-btn-primary" onclick="navigateToSection('dashboard')">
+              <span>Explore Solution Grid &rarr;</span>
+            </button>
+            <button class="arch-btn-secondary" onclick="openArchitectureModal()">
+              <div class="play-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+              <span>Watch Our Process</span>
+            </button>
+          </div>
+
+          <!-- Floating Stats Pill Card (Matching 250+ / 120+ / 15+ in reference) -->
+          <div class="arch-stats-card">
+            <div class="arch-stat-unit">
+              <div class="stat-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="2"/><line x1="8" y1="6" x2="10" y2="6"/><line x1="14" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/></svg>
+              </div>
+              <div>
+                <div class="stat-number tnum">8+</div>
+                <div class="stat-label">Campus Buildings</div>
+              </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="arch-stat-unit">
+              <div class="stat-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <div class="stat-number tnum">120+</div>
+                <div class="stat-label">Days Telemetry</div>
+              </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="arch-stat-unit">
+              <div class="stat-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div>
+                <div class="stat-number tnum">₹1.02M+</div>
+                <div class="stat-label">Utility Cost Savings</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 3D Architectural Building Model on Blueprint Table -->
+        <div class="arch-hero-right">
+          
+          <div class="model-stage-canvas">
+            
+            <!-- Rolled blueprint drafting papers background accent -->
+            <div class="blueprint-roll-bg"></div>
+
+            <!-- Elevated Isometric Architectural Pavilion Showcase -->
+            <div class="model-building-frame">
+              <img src="images/b04.jpg" alt="University Research & Innovation Hub Architectural Model" class="model-image">
+              
+              <!-- Subtle blueprint technical lines & warm glow overlay -->
+              <div class="blueprint-cad-lines"></div>
+              <div class="model-warm-glow"></div>
+              
+              <!-- Scale ruler annotation -->
+              <div class="cad-dimension-badge">SCALE 1:200 &bull; 6,400 m&sup2; ARCHITECTURAL PAVILION</div>
+            </div>
+
+            <!-- Top Right Floating Dark Card (Matching 'Innovative Design' in reference) -->
+            <div class="floating-dark-card" onclick="navigateToSection('resources')">
+              <div class="card-glow-dot"></div>
+              <div class="card-head-row">
+                <span class="card-title">Edge Waste AI &bull;</span>
+              </div>
+              <p class="card-desc">
+                Sub-millisecond multi-sensor physical classification across organic, recyclable &amp; hazardous waste.
+              </p>
+              <div class="card-accuracy-chip tnum">85.92% Accuracy &bull; 0.239 ms</div>
+              
+              <!-- Round green action button with plus -->
+              <div class="card-plus-btn" title="Inspect Edge AI Classifier">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Dark Architectural Ribbon Bar (Matching the 4 feature cards in reference) -->
+      <div class="arch-bottom-ribbon">
+        <div class="ribbon-card" onclick="navigateToSection('resources')">
+          <div class="ribbon-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <div class="ribbon-title">Edge AI Smart-Bin</div>
+            <div class="ribbon-sub">Physical multi-sensor classification under ₹4,500 ($54) BOM.</div>
+          </div>
+        </div>
+
+        <div class="ribbon-card" onclick="navigateToSection('forecasts')">
+          <div class="ribbon-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <div>
+            <div class="ribbon-title">12h Load Forecasting</div>
+            <div class="ribbon-sub">Predictive electricity &amp; water curves with surge detection.</div>
+          </div>
+        </div>
+
+        <div class="ribbon-card" onclick="navigateToSection('alerts')">
+          <div class="ribbon-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <div class="ribbon-title">Root-Cause Attribution</div>
+            <div class="ribbon-sub">Cross-referencing telemetry surges against technician field logs.</div>
+          </div>
+        </div>
+
+        <div class="ribbon-card" onclick="navigateToSection('dashboard')">
+          <div class="ribbon-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <div>
+            <div class="ribbon-title">Circular Resource Grid</div>
+            <div class="ribbon-sub">4:1 organic composting conservation &amp; P2P solar balancing.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE INTERACTIVE SOLUTION WORKSPACE -->
+    <section class="arch-solution-workspace" id="solution-workspace-section">
       
-      <!-- Left Dark Sidebar -->
-      <aside class="pcrg-sidebar">
-        <div class="sidebar-menu-list">
-          <a class="menu-item-link active" data-tab="dashboard" onclick="switchNavTab('dashboard')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Dashboard
-          </a>
-          <a class="menu-item-link" data-tab="buildings" onclick="switchNavTab('buildings')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="2"/><line x1="8" y1="6" x2="10" y2="6"/><line x1="14" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="14" y1="18" x2="16" y2="18"/></svg>
-            Buildings
-          </a>
-          <a class="menu-item-link" data-tab="forecasts" onclick="switchNavTab('forecasts')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            Forecasts
-          </a>
-          <a class="menu-item-link" data-tab="resources" onclick="switchNavTab('resources')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-            Resources
-          </a>
-          <a class="menu-item-link" data-tab="reports" onclick="switchNavTab('reports')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            Reports
-          </a>
-          <a class="menu-item-link" data-tab="incentives" onclick="switchNavTab('incentives')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Incentives
-          </a>
-          <a class="menu-item-link" data-tab="alerts" onclick="switchNavTab('alerts')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-            Alerts
-            <span class="menu-badge-red" id="sidebar-alert-badge">3</span>
-          </a>
-          <a class="menu-item-link" data-tab="settings" onclick="switchNavTab('settings')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-            Settings
-          </a>
+      <!-- Workspace Control Header -->
+      <div class="workspace-header-bar">
+        <div class="workspace-title-group">
+          <span class="workspace-sub-tag">&bull; LIVE OPERATIONAL CONSOLE</span>
+          <h2 class="workspace-main-title">Campus Microgrid &amp; Circular Decision Center</h2>
         </div>
 
-        <div class="sidebar-bottom-promo">
-          <div class="promo-leaf-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg>
-          </div>
-          <div class="promo-text">
-            Greener Campus<br><span style="color:#64748b; font-weight:normal;">Brighter Future</span>
-          </div>
+        <!-- Mode Toggle Pill -->
+        <div class="workspace-mode-switch">
+          <button class="switch-pill-btn" onclick="navigateToSection('entry')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>Entry Overview</span>
+          </button>
+          <button class="switch-pill-btn active">
+            <span>Live Grid Solution</span>
+          </button>
         </div>
-      </aside>
+      </div>
 
-      <!-- Main Canvas Viewport -->
-      <main class="pcrg-main-viewport" id="main-content-viewport">
-        <!-- Injected via JavaScript based on active sidebar tab -->
+      <!-- Solution Sub-Nav Tabs -->
+      <div class="solution-tabs-nav">
+        <button class="sol-tab-btn active" data-tab="dashboard" onclick="switchNavTab('dashboard')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>1. Overview Dashboard</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="buildings" onclick="switchNavTab('buildings')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="2"/><line x1="8" y1="6" x2="10" y2="6"/><line x1="14" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/></svg>
+          <span>2. Facilities (B01-B08)</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="forecasts" onclick="switchNavTab('forecasts')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <span>3. 12h Forecasts</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="resources" onclick="switchNavTab('resources')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <span>4. Edge Waste AI</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="reports" onclick="switchNavTab('reports')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>5. Hardware BOM ($54)</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="incentives" onclick="switchNavTab('incentives')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>6. Hostel Incentives</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="alerts" onclick="switchNavTab('alerts')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span>7. Anomaly Triage</span>
+          <span class="tab-badge-count" id="sol-tab-badge">3</span>
+        </button>
+        <button class="sol-tab-btn" data-tab="settings" onclick="switchNavTab('settings')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>8. System Settings</span>
+        </button>
+      </div>
+
+      <!-- Main Dynamic Canvas Container -->
+      <main class="arch-solution-canvas" id="main-content-viewport">
+        <!-- Rendered via JavaScript: Dashboard, Buildings, Forecasts, etc. -->
       </main>
 
-    </div>
+    </section>
 
   </div>
 
-  <script src="app.js?v=20261024_05"></script>
+  <script src="app.js?v=20261024_06"></script>
 </body>
 </html>
