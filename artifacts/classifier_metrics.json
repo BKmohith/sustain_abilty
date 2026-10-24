@@ -1,0 +1,23 @@
+{
+  "model_name": "Lightweight Optimized Soft-Voting Ensemble (RandomForest + ExtraTrees + HistGradientBoosting)",
+  "target_hardware": "Raspberry Pi 4 / ESP32-S3 Dual-Core edge envelope",
+  "test_accuracy_pct": 85.92,
+  "f1_score_macro": 0.8376,
+  "avg_inference_latency_ms": 0.239,
+  "classes": [
+    "food_organic",
+    "paper_cardboard",
+    "plastic",
+    "glass",
+    "metal",
+    "ewaste"
+  ],
+  "per_class_accuracy": {
+    "food_organic": 0.9325,
+    "paper_cardboard": 0.8522,
+    "plastic": 0.8298,
+    "glass": 0.6687,
+    "metal": 0.9391,
+    "ewaste": 0.6809
+  }
+}
