@@ -88,30 +88,40 @@ async function initApp() {
   renderCurrentView();
 }
 
-// Ingest Engine Data
+// Ingest Engine Data (authoritative backend or local fallback)
 async function loadData() {
+  const candidateUrls = [
+    '/artifacts/engine_output.json',
+    '/api/engine-output',
+    'engine_output.json',
+    'mock_engine_output.json'
+  ];
+
+  for (const url of candidateUrls) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        state.raw = await res.json();
+        state.dataSource = 'live-backend';
+        console.log(`[PCRG] Authoritative ML engine output loaded from ${url}:`, {
+          buildings: Object.keys(state.raw.buildings || {}).length,
+          generatedAt: state.raw.meta?.generated_at,
+          totalSavingsINR: state.raw.campus_totals?.total_utility_cost_savings_inr
+        });
+        return;
+      }
+    } catch (err) {
+      // Continue to next candidate
+    }
+  }
+
+  // Fallback to window.PCRG_ENGINE_DATA from data.js
   if (window.PCRG_ENGINE_DATA) {
     state.raw = window.PCRG_ENGINE_DATA;
     state.dataSource = 'bundled';
-  }
-
-  try {
-    const res = await fetch('../artifacts/engine_output.json');
-    if (res.ok) {
-      state.raw = await res.json();
-      state.dataSource = 'live';
-      return;
-    }
-  } catch (err) {}
-
-  try {
-    const mockRes = await fetch('mock_engine_output.json');
-    if (mockRes.ok) {
-      state.raw = await mockRes.json();
-      state.dataSource = 'mock';
-    }
-  } catch (err) {
-    console.error('Data load error:', err);
+    console.log('[PCRG] Fallback to bundled data.js engine output.');
+  } else {
+    console.error('[PCRG] Failed to load engine output from all endpoints.');
   }
 }
 

@@ -1,6 +1,6 @@
 window.PCRG_ENGINE_DATA = {
   "meta": {
-    "generated_at": "2026-10-24T12:00:00Z",
+    "generated_at": "2026-10-24T13:02:20.925211",
     "campus_name": "P2P Synthetic Smart Campus",
     "total_buildings": 8,
     "monitoring_window_days": 120,
@@ -10,14 +10,14 @@ window.PCRG_ENGINE_DATA = {
     "compost_conversion_ratio": 0.25
   },
   "campus_totals": {
-    "active_grid_electricity_kwh": 482150.0,
-    "solar_photovoltaic_generation_kwh": 124800.0,
-    "water_consumed_litres": 3840000.0,
-    "organic_waste_diverted_kg": 48200.0,
-    "compost_produced_kg": 12050.0,
-    "landfill_waste_prevented_kg": 61400.0,
-    "carbon_emissions_avoided_kg": 87360.0,
-    "total_utility_cost_savings_inr": 998400.0
+    "active_grid_electricity_kwh": 761614.6,
+    "solar_photovoltaic_generation_kwh": 109416.7,
+    "water_consumed_litres": 21385707.0,
+    "organic_waste_diverted_kg": 90146.2,
+    "compost_produced_kg": 22536.5,
+    "landfill_waste_prevented_kg": 42947.3,
+    "carbon_emissions_avoided_kg": 76591.7,
+    "total_utility_cost_savings_inr": 1021820.85
   },
   "buildings": {
     "B01": {
@@ -27,118 +27,118 @@ window.PCRG_ENGINE_DATA = {
       "design_capacity": 1200,
       "floors": 4,
       "has_solar": 1,
-      "solar_capacity_kw": 40.0,
+      "solar_capacity_kw": 120.0,
       "has_composter": 0,
       "current_status": "online",
-      "buffer_lag_hours": 0.2,
+      "buffer_lag_hours": 1.09,
       "telemetry": {
-        "electricity_kwh": 142.5,
-        "water_litres": 1200.0,
-        "solar_generation_kwh": 36.8,
-        "footfall": 640
+        "electricity_kwh": 15.69,
+        "water_litres": 120.3,
+        "solar_generation_kwh": 19.52,
+        "footfall": 119
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 85.0,
-        "recycled_dry_waste_kg": 120.0,
-        "contamination_pct": 6.2,
-        "landfill_kg": 24.0
+        "diverted_wet_waste_kg": 1987.6,
+        "recycled_dry_waste_kg": 4027.3,
+        "contamination_pct": 12.3,
+        "landfill_kg": 3397.5
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 145.0,
-          "predicted_water_litres": 1250.0,
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 30.4,
+          "predicted_water_litres": 518.0,
           "is_spike": false,
-          "exogenous_driver": "Regular Lecture Schedule"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 150.2,
-          "predicted_water_litres": 1400.0,
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 30.5,
+          "predicted_water_litres": 510.0,
           "is_spike": false,
-          "exogenous_driver": "Lunch Break Transition"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 162.8,
-          "predicted_water_litres": 1320.0,
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 29.9,
+          "predicted_water_litres": 504.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Seminars"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 158.0,
-          "predicted_water_litres": 1180.0,
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 30.4,
+          "predicted_water_litres": 495.0,
           "is_spike": false,
-          "exogenous_driver": "Lab Practical Sessions"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 148.5,
-          "predicted_water_litres": 1050.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 29.9,
+          "predicted_water_litres": 524.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Class Departure"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 130.0,
-          "predicted_water_litres": 920.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 23.4,
+          "predicted_water_litres": 334.0,
           "is_spike": false,
-          "exogenous_driver": "Campus Library Shift"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 110.4,
-          "predicted_water_litres": 750.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 31.2,
+          "predicted_water_litres": 511.0,
           "is_spike": false,
-          "exogenous_driver": "Base Standby Load"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 95.0,
-          "predicted_water_litres": 620.0,
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 31.0,
+          "predicted_water_litres": 500.0,
           "is_spike": false,
-          "exogenous_driver": "Night Security Lighting"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 82.0,
-          "predicted_water_litres": 510.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 30.2,
+          "predicted_water_litres": 503.0,
           "is_spike": false,
-          "exogenous_driver": "Off-peak Night Grid"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 70.0,
-          "predicted_water_litres": 450.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 29.2,
+          "predicted_water_litres": 496.0,
           "is_spike": false,
-          "exogenous_driver": "Base Server Operations"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 65.0,
-          "predicted_water_litres": 400.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 29.2,
+          "predicted_water_litres": 497.0,
           "is_spike": false,
-          "exogenous_driver": "Idle Overnight Baseline"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 60.0,
-          "predicted_water_litres": 380.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 29.1,
+          "predicted_water_litres": 494.0,
           "is_spike": false,
-          "exogenous_driver": "Idle Overnight Baseline"
+          "exogenous_driver": "Academic Block A: Evening extra tutoring sessions + High ambient temp (32.8\u00b0C)"
         }
       ]
     },
@@ -146,365 +146,365 @@ window.PCRG_ENGINE_DATA = {
       "id": "B02",
       "name": "Academic Block B",
       "type": "Academic",
-      "design_capacity": 1000,
-      "floors": 3,
+      "design_capacity": 900,
+      "floors": 4,
       "has_solar": 0,
       "solar_capacity_kw": 0.0,
       "has_composter": 0,
-      "current_status": "buffered_sync",
-      "buffer_lag_hours": 3.5,
+      "current_status": "online",
+      "buffer_lag_hours": 1.07,
       "telemetry": {
-        "electricity_kwh": 98.4,
-        "water_litres": 850.0,
+        "electricity_kwh": 12.75,
+        "water_litres": 110.4,
         "solar_generation_kwh": 0.0,
-        "footfall": 480
+        "footfall": 86
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 60.0,
-        "recycled_dry_waste_kg": 95.0,
-        "contamination_pct": 8.5,
-        "landfill_kg": 32.0
+        "diverted_wet_waste_kg": 1465.8,
+        "recycled_dry_waste_kg": 2996.1,
+        "contamination_pct": 12.3,
+        "landfill_kg": 2491.6
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 102.0,
-          "predicted_water_litres": 900.0,
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 29.2,
+          "predicted_water_litres": 491.0,
           "is_spike": false,
-          "exogenous_driver": "Midday Lectures"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 95.0,
-          "predicted_water_litres": 780.0,
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 30.7,
+          "predicted_water_litres": 495.0,
           "is_spike": false,
-          "exogenous_driver": "Break Period"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 138.5,
-          "predicted_water_litres": 1250.0,
-          "is_spike": true,
-          "exogenous_driver": "Mid-sem Day 3 Theory Exams + High Temp 34C"
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 31.0,
+          "predicted_water_litres": 481.0,
+          "is_spike": false,
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 142.0,
-          "predicted_water_litres": 1300.0,
-          "is_spike": true,
-          "exogenous_driver": "Mid-sem Examination Session 2"
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 515.0,
+          "is_spike": false,
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 115.0,
-          "predicted_water_litres": 950.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 518.0,
           "is_spike": false,
-          "exogenous_driver": "Exam Dismissal"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 88.0,
-          "predicted_water_litres": 650.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 19.4,
+          "predicted_water_litres": 251.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Wind-down"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 72.0,
-          "predicted_water_litres": 500.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 481.0,
           "is_spike": false,
-          "exogenous_driver": "Standby Off-peak"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 60.0,
-          "predicted_water_litres": 410.0,
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 29.0,
+          "predicted_water_litres": 475.0,
           "is_spike": false,
-          "exogenous_driver": "Standby Off-peak"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 52.0,
-          "predicted_water_litres": 350.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 30.9,
+          "predicted_water_litres": 496.0,
           "is_spike": false,
-          "exogenous_driver": "Idle"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 48.0,
-          "predicted_water_litres": 300.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 31.1,
+          "predicted_water_litres": 478.0,
           "is_spike": false,
-          "exogenous_driver": "Idle"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 45.0,
-          "predicted_water_litres": 280.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 31.1,
+          "predicted_water_litres": 493.0,
           "is_spike": false,
-          "exogenous_driver": "Night Security"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 42.0,
-          "predicted_water_litres": 260.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 492.0,
           "is_spike": false,
-          "exogenous_driver": "Night Security"
+          "exogenous_driver": "Academic Block B: Standard study hall schedule + low nighttime lighting"
         }
       ]
     },
     "B03": {
       "id": "B03",
       "name": "Central Library",
-      "type": "Academic",
-      "design_capacity": 800,
+      "type": "Library",
+      "design_capacity": 600,
       "floors": 3,
       "has_solar": 0,
       "solar_capacity_kw": 0.0,
       "has_composter": 0,
       "current_status": "online",
-      "buffer_lag_hours": 0.5,
+      "buffer_lag_hours": 1.07,
       "telemetry": {
-        "electricity_kwh": 76.2,
-        "water_litres": 420.0,
+        "electricity_kwh": 13.57,
+        "water_litres": 62.1,
         "solar_generation_kwh": 0.0,
-        "footfall": 310
+        "footfall": 154
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 35.0,
-        "recycled_dry_waste_kg": 145.0,
-        "contamination_pct": 3.8,
-        "landfill_kg": 15.0
+        "diverted_wet_waste_kg": 280.6,
+        "recycled_dry_waste_kg": 1122.5,
+        "contamination_pct": 12.3,
+        "landfill_kg": 612.9
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 78.0,
-          "predicted_water_litres": 430.0,
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 31.0,
+          "predicted_water_litres": 491.0,
           "is_spike": false,
-          "exogenous_driver": "Quiet Study Hours"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 72.0,
-          "predicted_water_litres": 400.0,
-          "is_spike": false,
-          "exogenous_driver": "Lunch Hours"
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 39.3,
+          "predicted_water_litres": 550.0,
+          "is_spike": true,
+          "exogenous_driver": "Exam Season: Library reading hall 24h revision occupancy surge"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 85.0,
-          "predicted_water_litres": 490.0,
-          "is_spike": false,
-          "exogenous_driver": "Study Surge"
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 40.6,
+          "predicted_water_litres": 550.0,
+          "is_spike": true,
+          "exogenous_driver": "Exam Season: Library reading hall 24h revision occupancy surge"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 92.0,
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 37.9,
           "predicted_water_litres": 550.0,
-          "is_spike": false,
-          "exogenous_driver": "Exam Revision"
+          "is_spike": true,
+          "exogenous_driver": "Exam Season: Library reading hall 24h revision occupancy surge"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 98.0,
-          "predicted_water_litres": 620.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 30.8,
+          "predicted_water_litres": 492.0,
           "is_spike": false,
-          "exogenous_driver": "Late Afternoon Revision"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 105.0,
-          "predicted_water_litres": 680.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 15.9,
+          "predicted_water_litres": 89.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Peak"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 112.0,
-          "predicted_water_litres": 740.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 517.0,
           "is_spike": false,
-          "exogenous_driver": "Reading Hall Crowds"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 118.0,
-          "predicted_water_litres": 800.0,
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 29.7,
+          "predicted_water_litres": 494.0,
           "is_spike": false,
-          "exogenous_driver": "Pre-Dinner Crowd"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 100.0,
-          "predicted_water_litres": 650.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 29.1,
+          "predicted_water_litres": 512.0,
           "is_spike": false,
-          "exogenous_driver": "Dinner Reduction"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 85.0,
-          "predicted_water_litres": 480.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 30.1,
+          "predicted_water_litres": 489.0,
           "is_spike": false,
-          "exogenous_driver": "Late Night Scholars"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 55.0,
-          "predicted_water_litres": 320.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 29.7,
+          "predicted_water_litres": 495.0,
           "is_spike": false,
-          "exogenous_driver": "Closing Time"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 35.0,
-          "predicted_water_litres": 200.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 30.1,
+          "predicted_water_litres": 488.0,
           "is_spike": false,
-          "exogenous_driver": "Security Lighting"
+          "exogenous_driver": "Central Library: Extended midnight exam revision hours (high occupancy)"
         }
       ]
     },
     "B04": {
       "id": "B04",
       "name": "Engineering Labs & Innovation Centre",
-      "type": "Research & Labs",
-      "design_capacity": 950,
-      "floors": 4,
+      "type": "Labs",
+      "design_capacity": 500,
+      "floors": 3,
       "has_solar": 1,
-      "solar_capacity_kw": 50.0,
+      "solar_capacity_kw": 80.0,
       "has_composter": 0,
       "current_status": "online",
-      "buffer_lag_hours": 0.1,
+      "buffer_lag_hours": 1.08,
       "telemetry": {
-        "electricity_kwh": 184.2,
-        "water_litres": 2100.0,
-        "solar_generation_kwh": 44.5,
-        "footfall": 520
+        "electricity_kwh": 17.76,
+        "water_litres": 47.1,
+        "solar_generation_kwh": 12.52,
+        "footfall": 43
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 92.0,
-        "recycled_dry_waste_kg": 210.0,
-        "contamination_pct": 5.1,
-        "landfill_kg": 48.0
+        "diverted_wet_waste_kg": 616.3,
+        "recycled_dry_waste_kg": 1650.8,
+        "contamination_pct": 12.1,
+        "landfill_kg": 1271.4
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 188.0,
-          "predicted_water_litres": 2150.0,
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 514.0,
           "is_spike": false,
-          "exogenous_driver": "Lab Server Load"
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 182.0,
-          "predicted_water_litres": 2000.0,
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 30.1,
+          "predicted_water_litres": 508.0,
           "is_spike": false,
-          "exogenous_driver": "Shift Handover"
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 195.0,
-          "predicted_water_litres": 2200.0,
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 30.0,
+          "predicted_water_litres": 495.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Research"
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 190.0,
-          "predicted_water_litres": 2100.0,
-          "is_spike": false,
-          "exogenous_driver": "Hardware Testing"
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 50.9,
+          "predicted_water_litres": 585.0,
+          "is_spike": true,
+          "exogenous_driver": "24-Hour Campus Hackathon computing cluster load + Chiller 2 override"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 185.0,
-          "predicted_water_litres": 1950.0,
-          "is_spike": false,
-          "exogenous_driver": "Prototype Deployment"
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 49.6,
+          "predicted_water_litres": 571.0,
+          "is_spike": true,
+          "exogenous_driver": "24-Hour Campus Hackathon computing cluster load + Chiller 2 override"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 192.0,
-          "predicted_water_litres": 2050.0,
-          "is_spike": false,
-          "exogenous_driver": "Evening Hackathon Setup"
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 39.3,
+          "predicted_water_litres": 135.0,
+          "is_spike": true,
+          "exogenous_driver": "24-Hour Campus Hackathon computing cluster load + Chiller 2 override"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 215.0,
-          "predicted_water_litres": 2400.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 45.9,
+          "predicted_water_litres": 579.0,
           "is_spike": true,
-          "exogenous_driver": "24-Hour Campus Hackathon Kickoff"
+          "exogenous_driver": "24-Hour Campus Hackathon computing cluster load + Chiller 2 override"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 235.0,
-          "predicted_water_litres": 2700.0,
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 45.9,
+          "predicted_water_litres": 566.0,
           "is_spike": true,
-          "exogenous_driver": "24-Hour Campus Hackathon Peak Computing"
+          "exogenous_driver": "24-Hour Campus Hackathon computing cluster load + Chiller 2 override"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 242.0,
-          "predicted_water_litres": 2850.0,
-          "is_spike": true,
-          "exogenous_driver": "Hackathon + HVAC Chiller Override"
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 30.7,
+          "predicted_water_litres": 501.0,
+          "is_spike": false,
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 240.0,
-          "predicted_water_litres": 2800.0,
-          "is_spike": true,
-          "exogenous_driver": "Hackathon Coding Sprint 1"
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 30.7,
+          "predicted_water_litres": 491.0,
+          "is_spike": false,
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 232.0,
-          "predicted_water_litres": 2600.0,
-          "is_spike": true,
-          "exogenous_driver": "Midnight Hackathon Surge"
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 30.4,
+          "predicted_water_litres": 494.0,
+          "is_spike": false,
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 225.0,
-          "predicted_water_litres": 2450.0,
-          "is_spike": true,
-          "exogenous_driver": "Continuous Lab Cluster Utilization"
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 29.5,
+          "predicted_water_litres": 477.0,
+          "is_spike": false,
+          "exogenous_driver": "Engineering Labs: 24-Hour Campus Hackathon computing cluster surge + chiller unit 2 override"
         }
       ]
     },
@@ -512,121 +512,121 @@ window.PCRG_ENGINE_DATA = {
       "id": "B05",
       "name": "Boys Hostel",
       "type": "Hostel",
-      "design_capacity": 750,
+      "design_capacity": 800,
       "floors": 5,
       "has_solar": 0,
       "solar_capacity_kw": 0.0,
       "has_composter": 1,
       "current_status": "online",
-      "buffer_lag_hours": 0.4,
+      "buffer_lag_hours": 1.4,
       "telemetry": {
-        "electricity_kwh": 112.0,
-        "water_litres": 4800.0,
+        "electricity_kwh": 89.6,
+        "water_litres": 3361.8,
         "solar_generation_kwh": 0.0,
-        "footfall": 680
+        "footfall": 660
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 195.0,
-        "recycled_dry_waste_kg": 85.0,
-        "contamination_pct": 7.4,
-        "landfill_kg": 52.0
+        "diverted_wet_waste_kg": 31211.8,
+        "recycled_dry_waste_kg": 8404.5,
+        "contamination_pct": 12.2,
+        "landfill_kg": 11780.6
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 95.0,
-          "predicted_water_litres": 2200.0,
-          "is_spike": false,
-          "exogenous_driver": "Class Hours Low Occupancy"
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 31.5,
+          "predicted_water_litres": 682.0,
+          "is_spike": true,
+          "exogenous_driver": "Hostel post-dinner washroom draw + automated tank booster pumping"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 92.0,
-          "predicted_water_litres": 2400.0,
-          "is_spike": false,
-          "exogenous_driver": "Lunch Return"
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 31.5,
+          "predicted_water_litres": 682.0,
+          "is_spike": true,
+          "exogenous_driver": "Hostel post-dinner washroom draw + automated tank booster pumping"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 88.0,
-          "predicted_water_litres": 1800.0,
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 29.0,
+          "predicted_water_litres": 494.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Classes"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 90.0,
-          "predicted_water_litres": 1900.0,
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 477.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Classes"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 110.0,
-          "predicted_water_litres": 2600.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 31.0,
+          "predicted_water_litres": 497.0,
           "is_spike": false,
-          "exogenous_driver": "Return from Academic Complex"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 128.0,
-          "predicted_water_litres": 3400.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 81.2,
+          "predicted_water_litres": 3099.0,
           "is_spike": false,
-          "exogenous_driver": "Sports & Shower Hours"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 145.0,
-          "predicted_water_litres": 4200.0,
-          "is_spike": true,
-          "exogenous_driver": "Evening Peak Water Heating + Room Power"
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 29.2,
+          "predicted_water_litres": 520.0,
+          "is_spike": false,
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 152.0,
-          "predicted_water_litres": 4600.0,
-          "is_spike": true,
-          "exogenous_driver": "Hostel Dinner Gathering"
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 30.4,
+          "predicted_water_litres": 517.0,
+          "is_spike": false,
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 140.0,
-          "predicted_water_litres": 3800.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 30.2,
+          "predicted_water_litres": 522.0,
           "is_spike": false,
-          "exogenous_driver": "Common Room Activities"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 138.0,
-          "predicted_water_litres": 3200.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 30.0,
+          "predicted_water_litres": 504.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Study Period"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 130.0,
-          "predicted_water_litres": 2800.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 30.5,
+          "predicted_water_litres": 524.0,
           "is_spike": false,
-          "exogenous_driver": "Night Study"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 122.0,
-          "predicted_water_litres": 2400.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 29.1,
+          "predicted_water_litres": 480.0,
           "is_spike": false,
-          "exogenous_driver": "Night Study"
+          "exogenous_driver": "Boys Hostel: Post-dinner residential rush + booster pump refill cycle"
         }
       ]
     },
@@ -634,375 +634,375 @@ window.PCRG_ENGINE_DATA = {
       "id": "B06",
       "name": "Girls Hostel",
       "type": "Hostel",
-      "design_capacity": 700,
+      "design_capacity": 600,
       "floors": 5,
       "has_solar": 0,
       "solar_capacity_kw": 0.0,
       "has_composter": 1,
       "current_status": "online",
-      "buffer_lag_hours": 0.3,
+      "buffer_lag_hours": 1.08,
       "telemetry": {
-        "electricity_kwh": 104.5,
-        "water_litres": 4500.0,
+        "electricity_kwh": 67.25,
+        "water_litres": 2428.5,
         "solar_generation_kwh": 0.0,
-        "footfall": 640
+        "footfall": 469
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 210.0,
-        "recycled_dry_waste_kg": 92.0,
-        "contamination_pct": 4.2,
-        "landfill_kg": 38.0
+        "diverted_wet_waste_kg": 23625.0,
+        "recycled_dry_waste_kg": 6305.9,
+        "contamination_pct": 11.8,
+        "landfill_kg": 6274.9
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 88.0,
-          "predicted_water_litres": 2100.0,
-          "is_spike": false,
-          "exogenous_driver": "Low Day Occupancy"
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 31.5,
+          "predicted_water_litres": 675.0,
+          "is_spike": true,
+          "exogenous_driver": "Hostel post-dinner washroom draw + automated tank booster pumping"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 85.0,
-          "predicted_water_litres": 2200.0,
-          "is_spike": false,
-          "exogenous_driver": "Lunch Break Return"
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 31.5,
+          "predicted_water_litres": 702.0,
+          "is_spike": true,
+          "exogenous_driver": "Hostel post-dinner washroom draw + automated tank booster pumping"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 80.0,
-          "predicted_water_litres": 1700.0,
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 31.0,
+          "predicted_water_litres": 500.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Classes"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 82.0,
-          "predicted_water_litres": 1800.0,
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 30.9,
+          "predicted_water_litres": 503.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Classes"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 102.0,
-          "predicted_water_litres": 2500.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 521.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Return"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 118.0,
-          "predicted_water_litres": 3200.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 65.2,
+          "predicted_water_litres": 2435.0,
           "is_spike": false,
-          "exogenous_driver": "Sports & Leisure"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 135.0,
-          "predicted_water_litres": 4100.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 509.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Peak Water Draw"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 142.0,
-          "predicted_water_litres": 4400.0,
-          "is_spike": true,
-          "exogenous_driver": "Pre-Dinner Electrical Surge"
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 29.3,
+          "predicted_water_litres": 506.0,
+          "is_spike": false,
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 130.0,
-          "predicted_water_litres": 3600.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 28.9,
+          "predicted_water_litres": 513.0,
           "is_spike": false,
-          "exogenous_driver": "Dinner Period"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 128.0,
-          "predicted_water_litres": 3000.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 30.2,
+          "predicted_water_litres": 523.0,
           "is_spike": false,
-          "exogenous_driver": "Study & Room Lighting"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 120.0,
-          "predicted_water_litres": 2600.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 30.3,
+          "predicted_water_litres": 497.0,
           "is_spike": false,
-          "exogenous_driver": "Night Study"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 112.0,
-          "predicted_water_litres": 2200.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 482.0,
           "is_spike": false,
-          "exogenous_driver": "Night Study"
+          "exogenous_driver": "Girls Hostel: Evening study hours + water refilling buffer"
         }
       ]
     },
     "B07": {
       "id": "B07",
-      "name": "Food Court & Central Mess",
-      "type": "Food Court",
+      "name": "Food Court",
+      "type": "Food",
       "design_capacity": 1500,
       "floors": 2,
       "has_solar": 1,
-      "solar_capacity_kw": 35.0,
+      "solar_capacity_kw": 60.0,
       "has_composter": 1,
       "current_status": "online",
-      "buffer_lag_hours": 0.2,
+      "buffer_lag_hours": 1.07,
       "telemetry": {
-        "electricity_kwh": 165.0,
-        "water_litres": 6200.0,
-        "solar_generation_kwh": 31.0,
-        "footfall": 1420
+        "electricity_kwh": 27.55,
+        "water_litres": 958.7,
+        "solar_generation_kwh": 9.51,
+        "footfall": 875
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 480.0,
-        "recycled_dry_waste_kg": 160.0,
-        "contamination_pct": 3.5,
-        "landfill_kg": 42.0
+        "diverted_wet_waste_kg": 30409.4,
+        "recycled_dry_waste_kg": 10040.2,
+        "contamination_pct": 12.1,
+        "landfill_kg": 8577.4
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 195.0,
-          "predicted_water_litres": 7200.0,
-          "is_spike": true,
-          "exogenous_driver": "Lunch Hour Mess Rush + Dishwashing"
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 29.5,
+          "predicted_water_litres": 509.0,
+          "is_spike": false,
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 210.0,
-          "predicted_water_litres": 8400.0,
-          "is_spike": true,
-          "exogenous_driver": "Peak Campus Dining Crowd (1,400+ Footfall)"
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 29.8,
+          "predicted_water_litres": 515.0,
+          "is_spike": false,
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 160.0,
-          "predicted_water_litres": 5500.0,
-          "is_spike": false,
-          "exogenous_driver": "Post-Lunch Kitchen Cleanliness Cycle"
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 40.9,
+          "predicted_water_litres": 736.0,
+          "is_spike": true,
+          "exogenous_driver": "Midnight Hackathon catering buffet prep + Kitchen dishwashing draw"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 115.0,
-          "predicted_water_litres": 3200.0,
-          "is_spike": false,
-          "exogenous_driver": "Mid-Afternoon Prep"
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 41.5,
+          "predicted_water_litres": 745.0,
+          "is_spike": true,
+          "exogenous_driver": "Midnight Hackathon catering buffet prep + Kitchen dishwashing draw"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 125.0,
-          "predicted_water_litres": 3800.0,
-          "is_spike": false,
-          "exogenous_driver": "Evening Tea & Snacks Setup"
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 42.2,
+          "predicted_water_litres": 732.0,
+          "is_spike": true,
+          "exogenous_driver": "Midnight Hackathon catering buffet prep + Kitchen dishwashing draw"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 140.0,
-          "predicted_water_litres": 4500.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 25.2,
+          "predicted_water_litres": 893.0,
           "is_spike": false,
-          "exogenous_driver": "Snack Rush"
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 165.0,
-          "predicted_water_litres": 5600.0,
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 30.1,
+          "predicted_water_litres": 477.0,
           "is_spike": false,
-          "exogenous_driver": "Dinner Preparation Starts"
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 205.0,
-          "predicted_water_litres": 7900.0,
-          "is_spike": true,
-          "exogenous_driver": "Hostel Dinner Rush Batch 1"
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 30.6,
+          "predicted_water_litres": 476.0,
+          "is_spike": false,
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 220.0,
-          "predicted_water_litres": 8800.0,
-          "is_spike": true,
-          "exogenous_driver": "Peak Dinner Service + Dishwashing"
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 30.8,
+          "predicted_water_litres": 516.0,
+          "is_spike": false,
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 175.0,
-          "predicted_water_litres": 6200.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 30.9,
+          "predicted_water_litres": 480.0,
           "is_spike": false,
-          "exogenous_driver": "Dining Hall Wind-down"
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 130.0,
-          "predicted_water_litres": 4200.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 28.9,
+          "predicted_water_litres": 486.0,
           "is_spike": false,
-          "exogenous_driver": "Late Night Sanitization"
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 85.0,
-          "predicted_water_litres": 2100.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 30.2,
+          "predicted_water_litres": 498.0,
           "is_spike": false,
-          "exogenous_driver": "Overnight Cool Storage"
+          "exogenous_driver": "Food Court: Late-night Hackathon snack counter & mess dining prep surge"
         }
       ]
     },
     "B08": {
       "id": "B08",
-      "name": "Sports Complex & Administration",
-      "type": "Sports & Admin",
-      "design_capacity": 500,
-      "floors": 2,
+      "name": "Admin Block",
+      "type": "Admin",
+      "design_capacity": 150,
+      "floors": 3,
       "has_solar": 0,
       "solar_capacity_kw": 0.0,
       "has_composter": 0,
-      "current_status": "offline",
-      "buffer_lag_hours": 6.8,
+      "current_status": "online",
+      "buffer_lag_hours": 1.37,
       "telemetry": {
-        "electricity_kwh": 45.0,
-        "water_litres": 950.0,
+        "electricity_kwh": 4.12,
+        "water_litres": 29.7,
         "solar_generation_kwh": 0.0,
-        "footfall": 180
+        "footfall": 8
       },
       "circular_metrics": {
-        "diverted_wet_waste_kg": 25.0,
-        "recycled_dry_waste_kg": 45.0,
-        "contamination_pct": 9.1,
-        "landfill_kg": 22.0
+        "diverted_wet_waste_kg": 549.7,
+        "recycled_dry_waste_kg": 1351.8,
+        "contamination_pct": 12.0,
+        "landfill_kg": 933.1
       },
       "forecast_12h": [
         {
           "step_ahead": 1,
-          "forecast_timestamp": "12:00",
-          "predicted_electricity_kwh": 48.0,
-          "predicted_water_litres": 980.0,
+          "forecast_timestamp": "2026-09-04 19:00",
+          "predicted_electricity_kwh": 31.1,
+          "predicted_water_litres": 502.0,
           "is_spike": false,
-          "exogenous_driver": "Admin Workday"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 2,
-          "forecast_timestamp": "13:00",
-          "predicted_electricity_kwh": 42.0,
-          "predicted_water_litres": 850.0,
+          "forecast_timestamp": "2026-09-04 20:00",
+          "predicted_electricity_kwh": 30.3,
+          "predicted_water_litres": 506.0,
           "is_spike": false,
-          "exogenous_driver": "Lunch Break"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 3,
-          "forecast_timestamp": "14:00",
-          "predicted_electricity_kwh": 46.0,
-          "predicted_water_litres": 920.0,
+          "forecast_timestamp": "2026-09-04 21:00",
+          "predicted_electricity_kwh": 29.1,
+          "predicted_water_litres": 521.0,
           "is_spike": false,
-          "exogenous_driver": "Afternoon Office Hours"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 4,
-          "forecast_timestamp": "15:00",
-          "predicted_electricity_kwh": 45.0,
-          "predicted_water_litres": 900.0,
+          "forecast_timestamp": "2026-09-04 22:00",
+          "predicted_electricity_kwh": 30.1,
+          "predicted_water_litres": 505.0,
           "is_spike": false,
-          "exogenous_driver": "Office Hours"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 5,
-          "forecast_timestamp": "16:00",
-          "predicted_electricity_kwh": 65.0,
-          "predicted_water_litres": 1400.0,
+          "forecast_timestamp": "2026-09-04 23:00",
+          "predicted_electricity_kwh": 30.8,
+          "predicted_water_litres": 515.0,
           "is_spike": false,
-          "exogenous_driver": "Evening Badminton & Gym Opening"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 6,
-          "forecast_timestamp": "17:00",
-          "predicted_electricity_kwh": 85.0,
-          "predicted_water_litres": 2200.0,
+          "forecast_timestamp": "2026-09-05 00:00",
+          "predicted_electricity_kwh": 9.8,
+          "predicted_water_litres": 95.0,
           "is_spike": false,
-          "exogenous_driver": "Peak Sports Arena Activity"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 7,
-          "forecast_timestamp": "18:00",
-          "predicted_electricity_kwh": 95.0,
-          "predicted_water_litres": 2600.0,
-          "is_spike": true,
-          "exogenous_driver": "Floodlights + Indoor Courts Utilization"
+          "forecast_timestamp": "2026-09-05 01:00",
+          "predicted_electricity_kwh": 29.9,
+          "predicted_water_litres": 510.0,
+          "is_spike": false,
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 8,
-          "forecast_timestamp": "19:00",
-          "predicted_electricity_kwh": 92.0,
-          "predicted_water_litres": 2500.0,
-          "is_spike": true,
-          "exogenous_driver": "Sports Complex Floodlights Active"
+          "forecast_timestamp": "2026-09-05 02:00",
+          "predicted_electricity_kwh": 28.8,
+          "predicted_water_litres": 510.0,
+          "is_spike": false,
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 9,
-          "forecast_timestamp": "20:00",
-          "predicted_electricity_kwh": 78.0,
-          "predicted_water_litres": 1900.0,
+          "forecast_timestamp": "2026-09-05 03:00",
+          "predicted_electricity_kwh": 29.3,
+          "predicted_water_litres": 514.0,
           "is_spike": false,
-          "exogenous_driver": "Court Closing Handover"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 10,
-          "forecast_timestamp": "21:00",
-          "predicted_electricity_kwh": 40.0,
-          "predicted_water_litres": 1100.0,
+          "forecast_timestamp": "2026-09-05 04:00",
+          "predicted_electricity_kwh": 29.1,
+          "predicted_water_litres": 480.0,
           "is_spike": false,
-          "exogenous_driver": "Admin Shutdown"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 11,
-          "forecast_timestamp": "22:00",
-          "predicted_electricity_kwh": 28.0,
-          "predicted_water_litres": 600.0,
+          "forecast_timestamp": "2026-09-05 05:00",
+          "predicted_electricity_kwh": 30.9,
+          "predicted_water_litres": 494.0,
           "is_spike": false,
-          "exogenous_driver": "Night Security Only"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         },
         {
           "step_ahead": 12,
-          "forecast_timestamp": "23:00",
-          "predicted_electricity_kwh": 25.0,
-          "predicted_water_litres": 550.0,
+          "forecast_timestamp": "2026-09-05 06:00",
+          "predicted_electricity_kwh": 30.9,
+          "predicted_water_litres": 523.0,
           "is_spike": false,
-          "exogenous_driver": "Night Security Only"
+          "exogenous_driver": "Admin Block: Normal off-hours standby power baseline"
         }
       ]
     }
   },
   "edge_classifier_benchmark": {
-    "model_name": "Lightweight Optimized Gradient Booster (Edge Quantized)",
+    "model_name": "Lightweight Optimized Soft-Voting Ensemble (RandomForest + ExtraTrees + HistGradientBoosting)",
     "target_hardware": "Raspberry Pi 4 / ESP32-S3 Dual-Core edge envelope",
-    "test_accuracy_pct": 91.4,
-    "f1_score_macro": 0.908,
-    "avg_inference_latency_ms": 2.4,
+    "test_accuracy_pct": 85.92,
+    "f1_score_macro": 0.8376,
+    "avg_inference_latency_ms": 0.239,
     "classes": [
       "food_organic",
       "paper_cardboard",
@@ -1012,12 +1012,12 @@ window.PCRG_ENGINE_DATA = {
       "ewaste"
     ],
     "per_class_accuracy": {
-      "food_organic": 0.94,
-      "plastic": 0.91,
-      "paper_cardboard": 0.92,
-      "metal": 0.89,
-      "glass": 0.86,
-      "ewaste": 0.95
+      "food_organic": 0.9325,
+      "paper_cardboard": 0.8522,
+      "plastic": 0.8298,
+      "glass": 0.6687,
+      "metal": 0.9391,
+      "ewaste": 0.6809
     }
   },
   "anomalies_and_attributions": [
@@ -1036,42 +1036,55 @@ window.PCRG_ENGINE_DATA = {
     },
     {
       "alert_id": "ALT-102",
-      "timestamp": "2026-09-08 13:30",
-      "building_id": "B07",
-      "building_name": "Food Court & Central Mess",
+      "timestamp": "2026-08-05 17:40",
+      "building_id": "B06",
+      "building_name": "Girls Hostel",
       "severity": "HIGH",
-      "anomaly_type": "Water Surge (+78% above baseline)",
-      "observed_value": "8,400 L/hr",
-      "expected_baseline": "4,720 L/hr",
-      "root_cause_explanation": "Cross-referenced with calendar: Freshers Orientation Luncheon + technician note: scullery dishwashing booster valve stuck open.",
-      "recommended_action": "1. Actuate solenoid cutoff on scullery valve line; 2. Balance dishwasher load balance; 3. Shift greywater recycle to grounds.",
-      "estimated_cost_impact_inr": "980 INR saved per cycle"
+      "anomaly_type": "Water Flow Leakage (+48% continuous draw)",
+      "observed_value": "4,120 Litres/hr",
+      "expected_baseline": "2,780 Litres/hr",
+      "root_cause_explanation": "Cross-referenced with warden log: Water meter running continuously; wet patch identified near 3rd floor riser pipe and block entrance.",
+      "recommended_action": "1. Isolate sector 3 supply riser valve; 2. Dispatch plumbing maintenance team for gasket replacement; 3. Enable greywater recycling pump.",
+      "estimated_cost_impact_inr": "2,150 INR water and pumping energy loss prevented"
     },
     {
       "alert_id": "ALT-103",
-      "timestamp": "2026-09-12 15:00",
-      "building_id": "B02",
-      "building_name": "Academic Block B",
+      "timestamp": "2026-07-28 21:15",
+      "building_id": "B03",
+      "building_name": "Central Library",
       "severity": "MEDIUM",
-      "anomaly_type": "HVAC Power Spike & Delayed Telemetry Packet",
-      "observed_value": "138.5 kWh (buffered 3.5h lag)",
-      "expected_baseline": "98.4 kWh",
-      "root_cause_explanation": "Mid-sem examinations in halls 201-204 coinciding with 34\u00b0C peak ambient heatwave; edge gateway buffered 3.5 hours during sub-station packet drop.",
-      "recommended_action": "1. Ingest buffered bursts deterministically; 2. Pre-cool lecture halls at 07:00 using off-peak rates; 3. Route rooftop solar from B01.",
-      "estimated_cost_impact_inr": "650 INR saved per cycle"
+      "anomaly_type": "HVAC Standby Power Anomaly (+35% off-hours load)",
+      "observed_value": "64.8 kWh",
+      "expected_baseline": "48.0 kWh",
+      "root_cause_explanation": "Cross-referenced with security log: Public holiday schedule, but main 2nd floor reading hall lights and split AC units were left active overnight.",
+      "recommended_action": "1. Trigger remote BACnet shutdown for reading hall circuits; 2. Reset PIR motion automation sensor timer to 15-minute timeout.",
+      "estimated_cost_impact_inr": "960 INR utility cost avoided per evening"
     },
     {
       "alert_id": "ALT-104",
-      "timestamp": "2026-09-18 19:15",
+      "timestamp": "2026-09-18 11:30",
       "building_id": "B05",
       "building_name": "Boys Hostel",
-      "severity": "LOW",
-      "anomaly_type": "Recycling Stream Contamination Warning",
-      "observed_value": "7.4% contamination",
-      "expected_baseline": "< 5.0% threshold",
-      "root_cause_explanation": "Hostel fest preparation weekend: unrinsed food takeout cartons disposed into dry cardboard bins.",
-      "recommended_action": "1. Trigger mobile push notification to Wing C residents; 2. Deduct 25 Green Credits from weekly hostel bonus pool.",
-      "estimated_cost_impact_inr": "320 INR avoided processing fee"
+      "severity": "MEDIUM",
+      "anomaly_type": "Composting Diversion Failure (Wet waste diversion dropped to 0%)",
+      "observed_value": "0.0 kg diverted",
+      "expected_baseline": "380.0 kg/day diverted",
+      "root_cause_explanation": "Cross-referenced with mess supervisor log: Composter motor burnt out yesterday; wet waste temporarily routed to municipal dumpsters.",
+      "recommended_action": "1. Expedite vendor replacement motor installation; 2. Divert interim wet mess waste to Food Court (B07) on-site digester.",
+      "estimated_cost_impact_inr": "2,470 INR compost value & landfill fees saved"
+    },
+    {
+      "alert_id": "ALT-105",
+      "timestamp": "2026-10-02 13:00",
+      "building_id": "B07",
+      "building_name": "Food Court",
+      "severity": "MEDIUM",
+      "anomaly_type": "Organic Waste & Water Surge (+54% dining spike)",
+      "observed_value": "612.0 kg wet waste",
+      "expected_baseline": "395.0 kg wet waste",
+      "root_cause_explanation": "Cross-referenced with calendar: Annual Alumni Homecoming Lunch expecting 1,500+ guests with intensive commercial kitchen preparation.",
+      "recommended_action": "1. Pre-allocate dual organic collection bins; 2. Stagger dishwashing shift cycles to prevent peak sewer line overload.",
+      "estimated_cost_impact_inr": "1,850 INR circular recovery value"
     }
   ],
   "gamified_incentive_loop": [
@@ -1079,130 +1092,130 @@ window.PCRG_ENGINE_DATA = {
       "rank": 1,
       "building_id": "B06",
       "building_name": "Girls Hostel",
-      "green_credits": 2840,
-      "contamination_pct": 4.2,
-      "compost_diversion_rate_pct": 91.8,
+      "green_credits": 2244,
+      "contamination_pct": 11.8,
+      "compost_diversion_rate_pct": 79.0,
       "occupant_reward_tier": "Gold Eco-Hostel Tier (Free laundry tokens & mess dessert bonus)",
       "weekly_delta": "+14%"
     },
     {
       "rank": 2,
-      "building_id": "B05",
-      "building_name": "Boys Hostel",
-      "green_credits": 2490,
-      "contamination_pct": 7.4,
-      "compost_diversion_rate_pct": 84.5,
-      "occupant_reward_tier": "Silver Eco-Hostel Tier (Priority gym slots)",
+      "building_id": "B07",
+      "building_name": "Food Court",
+      "green_credits": 2227,
+      "contamination_pct": 12.1,
+      "compost_diversion_rate_pct": 78.7,
+      "occupant_reward_tier": "Silver Eco-Hostel Tier (Priority sports slot bookings & mess menu vote)",
       "weekly_delta": "+8%"
     },
     {
       "rank": 3,
-      "building_id": "B07",
-      "building_name": "Food Court & Central Mess",
-      "green_credits": 2210,
-      "contamination_pct": 3.5,
-      "compost_diversion_rate_pct": 94.2,
-      "occupant_reward_tier": "Green Dining Partner (Organic garden recognition)",
-      "weekly_delta": "+11%"
+      "building_id": "B05",
+      "building_name": "Boys Hostel",
+      "green_credits": 1953,
+      "contamination_pct": 12.2,
+      "compost_diversion_rate_pct": 70.2,
+      "occupant_reward_tier": "Bronze Eco Tier (Campus Green Ambassador certificate & tree tag)",
+      "weekly_delta": "+5%"
     },
     {
       "rank": 4,
       "building_id": "B03",
       "building_name": "Central Library",
-      "green_credits": 1980,
-      "contamination_pct": 3.8,
-      "compost_diversion_rate_pct": 78.0,
-      "occupant_reward_tier": "Bronze Tier (Paper recycling champion)",
-      "weekly_delta": "+5%"
+      "green_credits": 1506,
+      "contamination_pct": 12.3,
+      "compost_diversion_rate_pct": 56.3,
+      "occupant_reward_tier": "Sustainable Operations Tier (Standard cafeteria discount)",
+      "weekly_delta": "+2%"
     },
     {
       "rank": 5,
-      "building_id": "B01",
-      "building_name": "Academic Block A",
-      "green_credits": 1820,
-      "contamination_pct": 6.2,
-      "compost_diversion_rate_pct": 72.4,
-      "occupant_reward_tier": "Standard Eco Tier",
-      "weekly_delta": "+3%"
+      "building_id": "B08",
+      "building_name": "Admin Block",
+      "green_credits": 1342,
+      "contamination_pct": 12.0,
+      "compost_diversion_rate_pct": 50.9,
+      "occupant_reward_tier": "Efficiency Improvement Tier (Energy conservation badge)",
+      "weekly_delta": "-1%"
     },
     {
       "rank": 6,
       "building_id": "B04",
-      "building_name": "Engineering Labs",
-      "green_credits": 1650,
-      "contamination_pct": 5.1,
-      "compost_diversion_rate_pct": 68.0,
-      "occupant_reward_tier": "Standard Eco Tier (E-waste diversion bonus)",
-      "weekly_delta": "+6%"
+      "building_name": "Engineering Labs & Innovation Centre",
+      "green_credits": 1115,
+      "contamination_pct": 12.1,
+      "compost_diversion_rate_pct": 43.9,
+      "occupant_reward_tier": "Contamination Watch Tier (Mandatory peer sorting audit)",
+      "weekly_delta": "-4%"
     },
     {
       "rank": 7,
       "building_id": "B02",
       "building_name": "Academic Block B",
-      "green_credits": 1410,
-      "contamination_pct": 8.5,
-      "compost_diversion_rate_pct": 61.2,
-      "occupant_reward_tier": "Improvement Advisory Notice",
-      "weekly_delta": "-2%"
+      "green_credits": 1113,
+      "contamination_pct": 12.3,
+      "compost_diversion_rate_pct": 44.0,
+      "occupant_reward_tier": "Optimization Required Tier (Automated custodial reminder)",
+      "weekly_delta": "-7%"
     },
     {
       "rank": 8,
-      "building_id": "B08",
-      "building_name": "Sports Complex & Admin",
-      "green_credits": 1190,
-      "contamination_pct": 9.1,
-      "compost_diversion_rate_pct": 54.0,
-      "occupant_reward_tier": "Improvement Advisory Notice",
-      "weekly_delta": "+1%"
+      "building_id": "B01",
+      "building_name": "Academic Block A",
+      "green_credits": 1100,
+      "contamination_pct": 12.3,
+      "compost_diversion_rate_pct": 43.6,
+      "occupant_reward_tier": "High Waste Remediation Tier (Facility warden inspection prompt)",
+      "weekly_delta": "-11%"
     }
   ],
   "engineering_envelope": {
     "per_building_hardware_budget_usd": 54.0,
     "hardware_bill_of_materials": [
       {
-        "component": "ESP32-S3 NodeMCU Edge Gateway (Dual Core 240MHz)",
+        "component": "ESP32-S3 NodeMCU Edge Gateway (Dual Core 240MHz, 8MB Flash)",
         "cost_usd": 6.5
       },
       {
-        "component": "Load Cell + HX711 ADC (Weight sensor)",
+        "component": "Load Cell (10kg cantilever) + HX711 24-bit ADC module",
         "cost_usd": 4.2
       },
       {
-        "component": "Capacitive Dielectric Moisture Probe",
+        "component": "Capacitive Dielectric Moisture Probe (Corrosion resistant)",
         "cost_usd": 3.8
       },
       {
-        "component": "Inductive Proximity Sensor (Metal detection)",
+        "component": "Inductive Proximity Sensor M12 (Ferrous/Non-ferrous detection)",
         "cost_usd": 5.5
       },
       {
-        "component": "Optical Transmission Photodiode Pair (Transparency)",
+        "component": "Optical Transmission Photodiode Pair (IR 940nm emitter/receiver)",
         "cost_usd": 2.5
       },
       {
-        "component": "Piezoelectric Vibration / Acoustic Sensor",
+        "component": "Piezoelectric Acoustic Impact Vibration Sensor Disc",
         "cost_usd": 3.5
       },
       {
-        "component": "CT Current Transformer & Pulse Water Flow Meter",
+        "component": "Non-invasive Split-Core CT Current Transformer & Pulse Water Flow Meter",
         "cost_usd": 18.0
       },
       {
-        "component": "Enclosure, wiring & local flash buffer SD module",
+        "component": "Weatherproof NEMA IP65 enclosure, wiring harness & local SD buffer",
         "cost_usd": 10.0
       }
     ],
-    "scaling_proof_3_to_30_buildings": "Edge nodes perform local feature extraction, deduplication, and inference. The central server only ingests 1 aggregated telemetry packet per building every 5 minutes (bandwidth < 1.2 KB/min). Total network bandwidth for 30 buildings is < 40 KB/min, requiring zero infrastructure upgrade.",
+    "scaling_proof_3_to_30_buildings": "Edge micro-controllers perform all feature extraction, threshold filtering, and local inference on-device. The central aggregation server only ingests 1 compressed telemetry packet per building every 5 minutes (bandwidth < 1.2 KB/min). Total network throughput for 30 connected buildings is < 40 KB/min, enabling seamless campus-wide scaling over standard Wi-Fi / LoRaWAN with zero cloud infrastructure upgrades.",
     "failure_modes": [
       {
-        "failure_mode": "Sensor Fouling / Window Dirt Degradation",
-        "description": "Optical photodiode windows get covered with food grease and dust over a semester, causing false 'opaque' readings for plastic or glass.",
-        "mitigation": "Automated baseline drift detection using daily zero-weight calibration, paired with a monthly custodial lens-wipe prompt triggered by telemetry variance."
+        "failure_mode": "Sensor Fouling & Optical Window Degradation",
+        "description": "Optical photodiode windows get coated with food grease, beverage splatters, and ambient dust over academic semesters, causing false 'opaque' readings for clear plastic bottles or lab glassware.",
+        "mitigation": "Automated baseline zero-weight calibration performed at 03:00 AM daily. When the photodiode unladen baseline drifts by more than 15% from factory zero, the system generates an automated custodial lens-wipe maintenance task on the facility mobile app."
       },
       {
         "failure_mode": "Adversarial Gaming of the Green Credit Incentive",
-        "description": "Hostel occupants discard heavy bricks or water bottles into smart bins to artificially inflate weight-based recycling credit scores.",
-        "mitigation": "Multi-modal cross-sensor verification: weight spikes without matching acoustic impact hardness and metal/plastic dielectric readings are flagged as anomalous and award zero credits."
+        "description": "Competitive hostel occupants discard heavy construction debris, bricks, or filled water bottles into smart sorting bins to artificially inflate weight-based green recycling points.",
+        "mitigation": "Multi-modal cross-sensor verification: sudden weight increases that fail to trigger acoustic impact hardness and dielectric moisture/metal properties are flagged as anomalous. Suspect transactions receive 0 green credits and trigger a 10-second camera audit buffer."
       }
     ]
   }

@@ -2,13 +2,23 @@ import http.server
 import socketserver
 import os
 import sys
-
 PORT = 5173
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(DIRECTORY)
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
+
+    def translate_path(self, path):
+        # Route /artifacts/ to repository root artifacts directory
+        clean_path = path.split('?', 1)[0].split('#', 1)[0]
+        if clean_path.startswith('/artifacts/'):
+            rel_path = clean_path[len('/artifacts/'):]
+            return os.path.join(REPO_ROOT, 'artifacts', rel_path.replace('/', os.sep))
+        elif clean_path == '/api/engine-output':
+            return os.path.join(REPO_ROOT, 'artifacts', 'engine_output.json')
+        return super().translate_path(path)
 
     def end_headers(self):
         # Prevent caching during live demonstration
