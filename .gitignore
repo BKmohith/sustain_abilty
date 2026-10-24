@@ -1,0 +1,12 @@
+# Large model binaries
+*.joblib
+*.pkl
+*.bin
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local environments
+.venv/
+venv/
